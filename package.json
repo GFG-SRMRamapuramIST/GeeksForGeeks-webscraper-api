@@ -1,0 +1,34 @@
+{
+  "name": "geeksforgeeks-api",
+  "version": "1.0.0",
+  "description": "A Node.js-based API that scrapes GeeksForGeeks data of a user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "geeksforgeeks",
+    "api",
+    "web-scraping",
+    "express",
+    "nodejs",
+    "cheerio"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Vishal Kumar Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.9",
+    "puppeteer": "^24.4.0"
+  }
+}
