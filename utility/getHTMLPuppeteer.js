@@ -7,10 +7,11 @@ async function getHTMLusingPlaywright(url) {
 
   await page.goto(url, { waitUntil: "networkidle" });
 
-  const data = await page.evaluate(() => document.body.innerText);
+  // Get full HTML content, not just text
+  const data = await page.content();
 
   await browser.close();
   return data;
 }
 
-module.exports = { getHTMLusingPlaywright };
+module.exports = getHTMLusingPlaywright;
