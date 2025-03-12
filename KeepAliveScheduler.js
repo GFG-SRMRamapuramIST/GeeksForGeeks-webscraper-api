@@ -6,7 +6,7 @@ const axios = require("axios");
 const keepAliveJob = cron.schedule("*/14 * * * *", async () => {
   try {
     console.log("Pinging server to keep it awake...");
-    await axios.get("https://codechef-api-9jml.onrender.com");
+    await axios.get("https://geeksforgeeks-webscraper-api.onrender.com/");
     console.log("Server pinged successfully.");
   } catch (error) {
     console.error("Error in Keep-Alive Ping:", error.message);
