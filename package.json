@@ -4,7 +4,6 @@
   "description": "A Node.js-based API that scrapes GeeksForGeeks data of a user.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "echo 'Skipping apt-get installation for Vercel'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js"
