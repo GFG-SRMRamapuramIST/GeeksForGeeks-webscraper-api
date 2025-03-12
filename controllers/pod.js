@@ -1,11 +1,11 @@
 const cheerio = require("cheerio");
-const { geeksforgeeksURL, getHTMLusingPuppeteer } = require("../utility");
+const { geeksforgeeksURL, getHTMLusingPlaywright } = require("../utility");
 
 const getPOD = async (req, res) => {
   const geeksforgeeksUserProfileURL = `${geeksforgeeksURL}/problem-of-the-day`;
 
   try {
-    const html = await getHTMLusingPuppeteer(geeksforgeeksUserProfileURL);
+    const html = await getHTMLusingPlaywright(geeksforgeeksUserProfileURL);
     const $ = cheerio.load(html);
 
     // Select the parent container

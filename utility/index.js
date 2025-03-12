@@ -1,5 +1,5 @@
 const geeksforgeeksURL = require("./geeksforgeeksURL");
 const getHTML = require("./getHTML");
-const getHTMLusingPuppeteer = require("./getHTMLPuppeteer");
+const getHTMLusingPlaywright = require("./getHTMLPuppeteer");
 
-module.exports = { geeksforgeeksURL, getHTMLusingPuppeteer, getHTML };
+module.exports = { geeksforgeeksURL, getHTMLusingPlaywright, getHTML };
