@@ -4,9 +4,9 @@
   "description": "A Node.js-based API that scrapes GeeksForGeeks data of a user.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npx puppeteer browsers install chrome",
+    "postinstall": "apt-get update && apt-get install -y chromium-browser",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [
